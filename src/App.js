@@ -50,7 +50,7 @@ export default class App extends React.Component {
           <main>
             <Route component={Layout} />
             <Switch>
-              <Route exact path="/:docPackageId?" component={DocViewer} />
+              <Route exact path="/:topic?/:docPackageId?/:file?" component={DocViewer} />
               <Route component={NotFoundPage} />
             </Switch>
           </main>
